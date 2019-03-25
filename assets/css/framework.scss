@@ -4,10 +4,148 @@
 $width: 100%;
 $col-size: $width / 12;
 $primary: #008cff;
-$primary-bg: #b8d7ff;
+$primary-light: #b8d7ff;
 $secondary: #333;
-$light: #ddd;
+$secondary-light: #ddd;
+$danger: #ff0000;
+$danger-light: #ffb0b0;
+$success: #008300;
+$success-light: #77d377;
 $white: #fff;
+
+// Colors
+.primary{
+  color: $primary;
+}
+.primary-light{
+  color: $primary-light;
+}
+.secondary{
+  color: $secondary;
+}
+.secondary-light{
+  color: $secondary-light;
+}
+.danger{
+  color: $danger;
+}
+.danger-light{
+  color: $danger-light;
+}
+.success{
+  color: $success;
+}
+.success-light{
+  color: $success-light;
+}
+.white{
+  color: $white;
+}
+
+// Background color
+.primary-bg{
+  background-color: $primary;
+}
+.primary-light-bg{
+  background-color: $primary-light;
+}
+.secondary-bg{
+  background-color: $secondary;
+}
+.secondary-light-bg{
+  background-color: $secondary-light;
+}
+.danger-bg{
+  background-color: $danger;
+}
+.danger-light-bg{
+  background-color: $danger-light;
+}
+.success-bg{
+  background-color: $success;
+}
+.success-light-bg{
+  background-color: $success-light;
+}
+.white-bg{
+  background-color: $white;
+}
+
+// Padding Classes
+@for $i from 1 through 5 {
+  .p-#{$i}{
+    padding: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .pt-#{$i}{
+    padding-top: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .pb-#{$i}{
+    padding-bottom: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .pl-#{$i}{
+    padding-left: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .pr-#{$i}{
+    padding-right: #{$i}px
+  }  
+}
+
+// Margin Classes
+@for $i from 1 through 5 {
+  .m-#{$i}{
+    margin: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .mt-#{$i}{
+    margin-top: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .mb-#{$i}{
+    margin-bottom: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .ml-#{$i}{
+    margin-left: #{$i}px
+  }  
+}
+
+@for $i from 1 through 5 {
+  .mr-#{$i}{
+    margin-right: #{$i}px
+  }  
+}
+// Border Classes
+.b{
+  border-width: 1px;
+  border-style: solid;
+  .b-primary{
+    border-color: $primary;
+  }
+  .b-secondary{
+    border-color: $secondary;
+  }
+  .b-success{
+    border-color: $success;
+  }
+}
 
 /* container*/
 .container {
@@ -16,9 +154,8 @@ $white: #fff;
   box-sizing: border-box;
 
   .row {
-    // width: $width;
     box-sizing: border-box;
-    padding: 1%;
+    // padding: 1%;
     display: flex;
     flex-wrap: wrap;
 
@@ -26,7 +163,6 @@ $white: #fff;
     // for larger screens above 768px
     @for $i from 1 through 12 {
       .col-xl-#{$i} {
-        // width: $col-size * $i;
         flex: $col-size * $i;
         padding: 1%;
       }
@@ -55,7 +191,7 @@ $white: #fff;
   }
 }
 
-/* Style the top navigation bar */
+/* Style for the top navigation bar */
 .navbar {
   display: flex;
   background-color: #333;
@@ -88,25 +224,63 @@ $white: #fff;
   
 }
 
+// Style for the Button elements
 .btn{
   padding: 5px;
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
+  box-shadow: none;
   cursor: pointer;
   &.btn-primary{
     color: $primary;
     border-color: $primary;
-    background-color:$primary-bg;
+    background-color:$primary-light;
+    &:hover{
+      color: $primary-light;
+      border-color: $primary;
+      background-color:$primary;  
+    }
   }
   &.btn-secondary{
     color: $secondary;
     border-color:$secondary;
-    background-color:$light;
+    background-color:$secondary-light;
+    &:hover{
+      color: $secondary-light;
+      border-color: $secondary;
+      background-color:$secondary;  
+    }
+  }
+  &.btn-success{
+    color: $success;
+    border-color:$success;
+    background-color: $success-light;
+    &:hover{
+      color: $success-light;
+      border-color: $success;
+      background-color:$success;  
+    }
+  }
+  &.btn-danger{
+    color: $danger;
+    border-color:$danger;
+    background-color: $danger-light;
+    &:hover{
+      color: $danger-light;
+      border-color: $danger;
+      background-color:$danger;  
+    }
   }
   &.btn-light{
-    color: $light;
-    border-color:$light;
+    color: $secondary-light;
+    border-color:$secondary-light;
     background-color: $secondary;
+    &:hover{
+      color: $secondary-light;
+      border-color: $secondary;
+      background-color:$secondary;  
+    }
   }
+
 }
