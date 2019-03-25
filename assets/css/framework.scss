@@ -1,0 +1,47 @@
+@import "reset";
+
+// definition of variables
+$width: 100%;
+$col-size: $width / 12;
+
+/* container*/
+.container {
+  padding: 1%;
+  width: $width;
+  box-sizing: border-box;
+
+  .row {
+    width: $width;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+
+    // for larger screens above 768px
+    @for $i from 1 through 12 {
+      .col-xl-#{$i} {
+        width: $col-size * $i;
+        padding: 1%;
+      }
+    }
+
+    // for medium sized screens
+    @media only screen and (max-width: 768px) {
+      @for $i from 1 through 12 {
+        .col-md-#{$i} {
+          width: $col-size * $i;
+          padding: 1%;
+        }
+      }
+    }
+
+    // for small sized screens
+    @media only screen and (max-width: 600px) {
+      @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+          width: $col-size * $i;
+          padding: 1%;
+        }
+      }
+    }
+  }
+}
