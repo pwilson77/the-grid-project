@@ -8,6 +8,9 @@ $primary-bg: #b8d7ff;
 $secondary: #333;
 $light: #ddd;
 $white: #fff;
+$input-height: 35px;
+$link-color: #cbd6e2;
+$link-hover-color: #0091ae;
 
 /* container*/
 .container {
@@ -22,13 +25,15 @@ $white: #fff;
     display: flex;
     flex-wrap: wrap;
 
-
     // for larger screens above 768px
     @for $i from 1 through 12 {
       .col-xl-#{$i} {
         // width: $col-size * $i;
         flex: $col-size * $i;
         padding: 1%;
+      }
+      .offset-xl-#{$i} {
+        margin-left: $col-size * $i;
       }
     }
 
@@ -39,16 +44,22 @@ $white: #fff;
           flex: $col-size * $i;
           padding: 1%;
         }
+        .offset-md-#{$i} {
+          margin-left: $col-size * $i;
+        }
       }
     }
 
     // for small sized screens
     @media only screen and (max-width: 600px) {
-      flex-direction: column;       
+      flex-direction: column;
       @for $i from 1 through 12 {
         .col-sm-#{$i} {
           flex: $col-size * $i;
           padding: 1%;
+        }
+        .offset-sm-#{$i} {
+          margin-left: $col-size * $i;
         }
       }
     }
@@ -60,53 +71,80 @@ $white: #fff;
   display: flex;
   background-color: #333;
   flex-direction: row;
-    a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-      &:hover {
-        background-color: #ddd;
-        color: black;
-      }  
+  a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      background-color: #ddd;
+      color: black;
     }
-    div{
-      visibility: collapse;   
-    }  
-  @media screen and (max-width: 600px) {
-      flex-direction: column;
-      div{
-        visibility: visible;
-        background-color: #ffffff;
-        padding: 1px 10px;
-        flex-direction: row;        
-      }
-      a{
-        visibility: collapse;
-      }
   }
-  
+  div {
+    visibility: collapse;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    div {
+      visibility: visible;
+      background-color: #ffffff;
+      padding: 1px 10px;
+      flex-direction: row;
+    }
+    a {
+      visibility: collapse;
+    }
+  }
 }
 
-.btn{
+.btn {
   padding: 5px;
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  &.btn-primary{
+  &.btn-primary {
     color: $primary;
     border-color: $primary;
-    background-color:$primary-bg;
+    background-color: $primary-bg;
   }
-  &.btn-secondary{
+  &.btn-secondary {
     color: $secondary;
-    border-color:$secondary;
-    background-color:$light;
+    border-color: $secondary;
+    background-color: $light;
   }
-  &.btn-light{
+  &.btn-light {
     color: $light;
-    border-color:$light;
+    border-color: $light;
     background-color: $secondary;
   }
+}
+
+/* Forms */
+.form-d {
+  input[type="checkbox"],
+  input[type="radio"] {
+    height: 17px;
+    width: 17px;
+    background-color: white;
+  }
+  input[type="text"] {
+    height: $input-height;
+    padding: 1%;
+    border-radius: 3px;
+    border-color: transparent;
+  }
+  input[type="text"]:hover {
+    border-color: #008cff;
+  }
+
+  .input-group {
+    display: inline-block;
+  }
+}
+
+/*Social Icons*/
+.socialI {
+  font-size: larger;
 }
