@@ -1,0 +1,31 @@
+.logo {
+  justify-content: center; }
+  .logo div h1 {
+    font-size: xx-large; }
+
+.news-article {
+  color: white;
+  padding: 1%;
+  box-sizing: border-box; }
+  .news-article div img {
+    width: 100%; }
+  .news-article div .text-box {
+    padding: 20px;
+    background-color: #ff7a59; }
+    .news-article div .text-box h1 {
+      font-size: x-large;
+      padding-bottom: 5px; }
+    .news-article div .text-box h3 {
+      font-size: large; }
+
+.subscribe-box {
+  height: 540px; }
+  .subscribe-box .subscribe-info {
+    display: flex;
+    align-items: center; }
+    .subscribe-box .subscribe-info .h1 {
+      font-size: xx-large; }
+    .subscribe-box .subscribe-info .p {
+      font-size: larger; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+.logo {
+  justify-content: center;
+
+  div {
+    h1 {
+      font-size: xx-large;
+    }
+  }
+}
+
+.news-article {
+  color: white;
+  padding: 1%;
+  box-sizing: border-box;
+
+  div {
+    img {
+      width: 100%;
+    }
+    .text-box {
+      padding: 20px;
+      background-color: #ff7a59;
+
+      h1 {
+        font-size: x-large;
+        padding-bottom: 5px;
+      }
+      h3 {
+        font-size: large;
+      }
+    }
+  }
+}
+
+.subscribe-box {
+  height: 540px;
+
+  .subscribe-info {
+    display: flex;
+    align-items: center;
+
+    .h1 {
+      font-size: xx-large;
+    }
+
+    .p {
+      font-size: larger;
+    }
+  }
+}
