@@ -19,13 +19,34 @@
       font-size: large; }
 
 .subscribe-box {
-  height: 540px; }
+  height: 540px;
+  background-image: linear-gradient(to right, #f2555b, #ff7a59);
+  color: white; }
   .subscribe-box .subscribe-info {
-    display: flex;
-    align-items: center; }
-    .subscribe-box .subscribe-info .h1 {
-      font-size: xx-large; }
-    .subscribe-box .subscribe-info .p {
-      font-size: larger; }
+    align-items: center;
+    padding: 64px; }
+    .subscribe-box .subscribe-info div h1 {
+      font-size: xx-large;
+      padding: 16px 0px;
+      line-height: 40px; }
+    .subscribe-box .subscribe-info div p {
+      font-size: larger;
+      padding: 16px 0px; }
+  .subscribe-box .subscribe-form {
+    padding: 48px 48px 48px 0px; }
+    .subscribe-box .subscribe-form button {
+      height: 36px; }
+    .subscribe-box .subscribe-form p {
+      font-size: smaller;
+      line-height: 20px; }
+    .subscribe-box .subscribe-form .hr p {
+      text-align: center; }
+    .subscribe-box .subscribe-form .hr hr {
+      background-color: white;
+      border-color: transparent;
+      height: 0.5px; }
+
+.bts {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */

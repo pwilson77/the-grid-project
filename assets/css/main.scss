@@ -34,17 +34,49 @@
 
 .subscribe-box {
   height: 540px;
+  background-image: linear-gradient(to right, #f2555b, #ff7a59);
+  color: white;
 
   .subscribe-info {
-    display: flex;
     align-items: center;
-
-    .h1 {
-      font-size: xx-large;
-    }
-
-    .p {
-      font-size: larger;
+    padding: 64px;
+    div {
+      h1 {
+        font-size: xx-large;
+        padding: 16px 0px;
+        line-height: 40px;
+      }
+      p {
+        font-size: larger;
+        padding: 16px 0px;
+      }
     }
   }
+  .subscribe-form {
+    padding: 48px 48px 48px 0px;
+
+    button {
+      height: 36px;
+    }
+
+    p {
+      font-size: smaller;
+      line-height: 20px;
+    }
+
+    .hr {
+      p {
+        text-align: center;
+      }
+      hr {
+        background-color: white;
+        border-color: transparent;
+        height: 0.5px;
+      }
+    }
+  }
+}
+
+.bts {
+  margin-bottom: 20px;
 }

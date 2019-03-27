@@ -235,6 +235,22 @@ h6 {
   .flex-column {
     flex-direction: column; }
 
+.left {
+  justify-content: flex-start; }
+
+.right {
+  justify-content: flex-end; }
+
+.center {
+  justify-content: center; }
+
+.block {
+  display: block; }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
 .p-1 {
   padding: 2px; }
 
@@ -407,151 +423,151 @@ h6 {
     display: flex;
     flex-wrap: wrap; }
     .container .row .col-xl-1 {
-      flex: 8.3333333333%; }
+      width: 8.3333333333%; }
     .container .row .offset-xl-1 {
       margin-left: 8.3333333333%; }
     .container .row .col-xl-2 {
-      flex: 16.6666666667%; }
+      width: 16.6666666667%; }
     .container .row .offset-xl-2 {
       margin-left: 16.6666666667%; }
     .container .row .col-xl-3 {
-      flex: 25%; }
+      width: 25%; }
     .container .row .offset-xl-3 {
       margin-left: 25%; }
     .container .row .col-xl-4 {
-      flex: 33.3333333333%; }
+      width: 33.3333333333%; }
     .container .row .offset-xl-4 {
       margin-left: 33.3333333333%; }
     .container .row .col-xl-5 {
-      flex: 41.6666666667%; }
+      width: 41.6666666667%; }
     .container .row .offset-xl-5 {
       margin-left: 41.6666666667%; }
     .container .row .col-xl-6 {
-      flex: 50%; }
+      width: 50%; }
     .container .row .offset-xl-6 {
       margin-left: 50%; }
     .container .row .col-xl-7 {
-      flex: 58.3333333333%; }
+      width: 58.3333333333%; }
     .container .row .offset-xl-7 {
       margin-left: 58.3333333333%; }
     .container .row .col-xl-8 {
-      flex: 66.6666666667%; }
+      width: 66.6666666667%; }
     .container .row .offset-xl-8 {
       margin-left: 66.6666666667%; }
     .container .row .col-xl-9 {
-      flex: 75%; }
+      width: 75%; }
     .container .row .offset-xl-9 {
       margin-left: 75%; }
     .container .row .col-xl-10 {
-      flex: 83.3333333333%; }
+      width: 83.3333333333%; }
     .container .row .offset-xl-10 {
       margin-left: 83.3333333333%; }
     .container .row .col-xl-11 {
-      flex: 91.6666666667%; }
+      width: 91.6666666667%; }
     .container .row .offset-xl-11 {
       margin-left: 91.6666666667%; }
     .container .row .col-xl-12 {
-      flex: 100%; }
+      width: 100%; }
     .container .row .offset-xl-12 {
       margin-left: 100%; }
     @media only screen and (max-width: 768px) {
       .container .row .col-md-1 {
-        flex: 8.3333333333%; }
+        width: 8.3333333333%; }
       .container .row .offset-md-1 {
         margin-left: 8.3333333333%; }
       .container .row .col-md-2 {
-        flex: 16.6666666667%; }
+        width: 16.6666666667%; }
       .container .row .offset-md-2 {
         margin-left: 16.6666666667%; }
       .container .row .col-md-3 {
-        flex: 25%; }
+        width: 25%; }
       .container .row .offset-md-3 {
         margin-left: 25%; }
       .container .row .col-md-4 {
-        flex: 33.3333333333%; }
+        width: 33.3333333333%; }
       .container .row .offset-md-4 {
         margin-left: 33.3333333333%; }
       .container .row .col-md-5 {
-        flex: 41.6666666667%; }
+        width: 41.6666666667%; }
       .container .row .offset-md-5 {
         margin-left: 41.6666666667%; }
       .container .row .col-md-6 {
-        flex: 50%; }
+        width: 50%; }
       .container .row .offset-md-6 {
         margin-left: 50%; }
       .container .row .col-md-7 {
-        flex: 58.3333333333%; }
+        width: 58.3333333333%; }
       .container .row .offset-md-7 {
         margin-left: 58.3333333333%; }
       .container .row .col-md-8 {
-        flex: 66.6666666667%; }
+        width: 66.6666666667%; }
       .container .row .offset-md-8 {
         margin-left: 66.6666666667%; }
       .container .row .col-md-9 {
-        flex: 75%; }
+        width: 75%; }
       .container .row .offset-md-9 {
         margin-left: 75%; }
       .container .row .col-md-10 {
-        flex: 83.3333333333%; }
+        width: 83.3333333333%; }
       .container .row .offset-md-10 {
         margin-left: 83.3333333333%; }
       .container .row .col-md-11 {
-        flex: 91.6666666667%; }
+        width: 91.6666666667%; }
       .container .row .offset-md-11 {
         margin-left: 91.6666666667%; }
       .container .row .col-md-12 {
-        flex: 100%; }
+        width: 100%; }
       .container .row .offset-md-12 {
         margin-left: 100%; } }
     @media only screen and (max-width: 600px) {
       .container .row {
         flex-direction: column; }
         .container .row .col-sm-1 {
-          flex: 8.3333333333%; }
+          width: 8.3333333333%; }
         .container .row .offset-sm-1 {
           margin-left: 8.3333333333%; }
         .container .row .col-sm-2 {
-          flex: 16.6666666667%; }
+          width: 16.6666666667%; }
         .container .row .offset-sm-2 {
           margin-left: 16.6666666667%; }
         .container .row .col-sm-3 {
-          flex: 25%; }
+          width: 25%; }
         .container .row .offset-sm-3 {
           margin-left: 25%; }
         .container .row .col-sm-4 {
-          flex: 33.3333333333%; }
+          width: 33.3333333333%; }
         .container .row .offset-sm-4 {
           margin-left: 33.3333333333%; }
         .container .row .col-sm-5 {
-          flex: 41.6666666667%; }
+          width: 41.6666666667%; }
         .container .row .offset-sm-5 {
           margin-left: 41.6666666667%; }
         .container .row .col-sm-6 {
-          flex: 50%; }
+          width: 50%; }
         .container .row .offset-sm-6 {
           margin-left: 50%; }
         .container .row .col-sm-7 {
-          flex: 58.3333333333%; }
+          width: 58.3333333333%; }
         .container .row .offset-sm-7 {
           margin-left: 58.3333333333%; }
         .container .row .col-sm-8 {
-          flex: 66.6666666667%; }
+          width: 66.6666666667%; }
         .container .row .offset-sm-8 {
           margin-left: 66.6666666667%; }
         .container .row .col-sm-9 {
-          flex: 75%; }
+          width: 75%; }
         .container .row .offset-sm-9 {
           margin-left: 75%; }
         .container .row .col-sm-10 {
-          flex: 83.3333333333%; }
+          width: 83.3333333333%; }
         .container .row .offset-sm-10 {
           margin-left: 83.3333333333%; }
         .container .row .col-sm-11 {
-          flex: 91.6666666667%; }
+          width: 91.6666666667%; }
         .container .row .offset-sm-11 {
           margin-left: 91.6666666667%; }
         .container .row .col-sm-12 {
-          flex: 100%; }
+          width: 100%; }
         .container .row .offset-sm-12 {
           margin-left: 100%; } }
 
