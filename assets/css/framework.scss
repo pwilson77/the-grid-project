@@ -7,13 +7,17 @@ $col-size: $width / 12;
 $input-height: 35px;
 
 // Font Variables
-$body-font: "Roboto", sans-serif;
-$header-font: "Open Sans", sans-serif;
-$roboto-slab: "Roboto Slab", serif;
+$body-font: "Roboto",
+sans-serif;
+$header-font: "Open Sans",
+sans-serif;
+$roboto-slab: "Roboto Slab",
+serif;
 
 // IMAGE STYLES
 .img {
   margin: 0%;
+
   &-responsive {
     width: $width;
     height: auto;
@@ -25,6 +29,7 @@ body {
   font-family: $body-font;
   font-weight: normal;
 }
+
 h1,
 h2,
 h3,
@@ -45,6 +50,7 @@ h6 {
   width: $width;
   height: auto;
 }
+
 // CARDS
 .card {
   padding: 2%;
@@ -53,40 +59,51 @@ h6 {
   margin-bottom: 2.5%;
   background-color: $secondary-light;
   cursor: pointer;
+
   p {
     font-size: 1em;
     padding-bottom: 2%;
   }
+
   span {
     font-size: 1em;
     text-transform: uppercase;
   }
 }
+
 // Colors
 .primary {
   color: $primary;
 }
+
 .primary-light {
   color: $primary-light;
 }
+
 .secondary {
   color: $secondary;
 }
+
 .secondary-light {
   color: $secondary-light;
 }
+
 .danger {
   color: $danger;
 }
+
 .danger-light {
   color: $danger-light;
 }
+
 .success {
   color: $success;
 }
+
 .success-light {
   color: $success-light;
 }
+
 .white {
   color: $white;
 }
@@ -95,27 +112,35 @@ h6 {
 .primary-bg {
   background-color: $primary;
 }
+
 .primary-light-bg {
   background-color: $primary-light;
 }
+
 .secondary-bg {
   background-color: $secondary;
 }
+
 .secondary-light-bg {
   background-color: $secondary-light;
 }
+
 .danger-bg {
   background-color: $danger;
 }
+
 .danger-light-bg {
   background-color: $danger-light;
 }
+
 .success-bg {
   background-color: $success;
 }
+
 .success-light-bg {
   background-color: $success-light;
 }
+
 .white-bg {
   background-color: $white;
 }
@@ -128,6 +153,7 @@ h6 {
 
 %link2-css {
   color: $link-color;
+
   &:hover {
     color: $link-hover-color;
   }
@@ -143,9 +169,11 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &-row {
     flex-direction: row;
   }
+
   &-column {
     flex-direction: column;
   }
@@ -233,16 +261,20 @@ h6 {
     margin-right: #{$i * 2}px;
   }
 }
+
 // Border Classes
 .b {
   border-width: 1px;
   border-style: solid;
+
   .b-primary {
     border-color: $primary;
   }
+
   .b-secondary {
     border-color: $secondary;
   }
+
   .b-success {
     border-color: $success;
   }
@@ -267,6 +299,7 @@ h6 {
         width: $col-size * $i;
         // padding: 1%;
       }
+
       .offset-xl-#{$i} {
         margin-left: $col-size * $i;
       }
@@ -279,6 +312,7 @@ h6 {
           width: $col-size * $i;
           // padding: 1%;
         }
+
         .offset-md-#{$i} {
           margin-left: $col-size * $i;
         }
@@ -288,11 +322,13 @@ h6 {
     // for small sized screens
     @media only screen and (max-width: 600px) {
       flex-direction: column;
+
       @for $i from 1 through 12 {
         .col-sm-#{$i} {
           width: $col-size * $i;
           // padding: 1%;
         }
+
         .offset-sm-#{$i} {
           margin-left: $col-size * $i;
         }
@@ -306,27 +342,33 @@ h6 {
   display: flex;
   background-color: $secondary;
   flex-direction: row-reverse;
+
   a {
     color: $white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+
     &:hover {
       background-color: $secondary-light;
       color: $secondary;
     }
   }
+
   div {
     visibility: collapse;
   }
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
+
     div {
       visibility: visible;
       background-color: $white;
       padding: 1px 10px;
       flex-direction: row;
     }
+
     a {
       visibility: collapse;
     }
@@ -341,70 +383,84 @@ h6 {
   border-width: 1px;
   box-shadow: none;
   cursor: pointer;
+
   &.btn-primary {
     color: $primary;
     border-color: $primary;
     background-color: $primary-light;
+
     &:hover {
       color: $primary-light;
       border-color: $primary;
       background-color: $primary;
     }
   }
+
   &.btn-secondary {
     color: $secondary;
     border-color: $secondary;
     background-color: $secondary-light;
+
     &:hover {
       color: $secondary-light;
       border-color: $secondary;
       background-color: $secondary;
     }
   }
+
   &.btn-success {
     color: $success;
     border-color: $success;
     background-color: $success-light;
+
     &:hover {
       color: $success-light;
       border-color: $success;
       background-color: $success;
     }
   }
+
   &.btn-danger {
     color: $danger;
     border-color: $danger;
     background-color: $danger-light;
+
     &:hover {
       color: $danger-light;
       border-color: $danger;
       background-color: $danger;
     }
   }
+
   &.btn-light {
     color: $secondary-light;
     border-color: $secondary-light;
     background-color: $secondary;
+
     &:hover {
       color: $secondary-light;
       border-color: $secondary;
       background-color: $secondary;
     }
   }
+
   &.btn-transparent {
     color: white;
     border-color: $white;
     background-color: transparent;
+
     &:hover {
       color: $secondary;
       border-color: transparent;
       background-color: $white;
     }
   }
+
   &.btn-white {
     color: $secondary;
     border-color: transparent;
     background-color: $white;
+
     &:hover {
       color: $white;
       border-color: transparent;
@@ -415,18 +471,21 @@ h6 {
 
 /* Forms */
 .form-d {
+
   input[type="checkbox"],
   input[type="radio"] {
     height: 17px;
     width: 17px;
     background-color: white;
   }
+
   input[type="text"] {
     height: $input-height;
     padding: 1%;
     border-radius: 3px;
     border-color: transparent;
   }
+
   input[type="text"]:hover {
     border-color: #008cff;
   }

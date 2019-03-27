@@ -3,6 +3,17 @@
   .logo div h1 {
     font-size: xx-large; }
 
+.btn {
+  border-radius: 5px; }
+  .btn.btn-danger {
+    color: #fff;
+    border-color: #fff;
+    background-color: #ffb0b0; }
+    .btn.btn-danger:hover {
+      color: #fff;
+      border-color: #fff;
+      background-color: #ff0000; }
+
 header div.container {
   border-bottom: #333 solid 1px; }
 
