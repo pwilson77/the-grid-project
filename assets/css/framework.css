@@ -151,9 +151,12 @@ h6 {
   font-family: "Roboto Slab", serif;
   font-weight: bold; }
 
+.r {
+  width: 100%;
+  height: auto; }
+
 .card {
   padding: 2%;
-  margin-left: 4%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   background-color: #ddd;
@@ -394,11 +397,13 @@ h6 {
 
 /* container*/
 .container {
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
   width: 100%;
   box-sizing: border-box; }
   .container .row {
     box-sizing: border-box;
+    padding: 1% 0%;
     display: flex;
     flex-wrap: wrap; }
     .container .row .col-xl-1 {

@@ -52,10 +52,15 @@ h6 {
   font-weight: bold;
 }
 
+// RESPOMNSIVE CLASS
+.r{
+  width: $width;
+  height: auto;
+}
 // CARDS
 .card {
   padding: 2%;
-  margin-left: 4%;
+  // margin-left: 4%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   background-color: $secondary-light;
@@ -225,15 +230,16 @@ h6 {
 
 /* container*/
 .container {
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
   width: $width;
   box-sizing: border-box;
 
   .row {
     box-sizing: border-box;
-    // padding: 1%;
+    padding: 1% 0%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;      
 
     // for larger screens above 768px
     @for $i from 1 through 12 {
