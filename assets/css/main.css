@@ -1,6 +1,7 @@
 .logo {
   justify-content: center;
 }
+
 .logo div h1 {
   font-size: xx-large;
 }
@@ -8,11 +9,13 @@
 .btn {
   border-radius: 5px;
 }
+
 .btn.btn-danger {
   color: #fff;
   border-color: #fff;
   background-color: #ffb0b0;
 }
+
 .btn.btn-danger:hover {
   color: #fff;
   border-color: #fff;
@@ -27,28 +30,34 @@ header div.container {
 .navbar {
   background-color: #fff;
 }
+
 .navbar a {
   color: #333;
   font-weight: bold;
   font-size: 0.88em;
 }
+
 .navbar a:hover {
   background-color: #fff;
   color: #ddd;
 }
+
 .navbar div {
   visibility: collapse;
 }
+
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
   }
+
   .navbar div {
     visibility: visible;
     background-color: #fff;
     padding: 1px 10px;
     flex-direction: row;
   }
+
   .navbar a {
     visibility: collapse;
   }
@@ -62,10 +71,12 @@ header div.container {
   cursor: pointer;
   font-size: 0.85em;
 }
+
 .card p {
   padding-bottom: 2%;
   line-height: 1.5;
 }
+
 .card span {
   text-transform: uppercase;
 }
@@ -79,18 +90,22 @@ header div.container {
 .desc {
   margin-top: -1%;
 }
+
 .desc p {
   font-size: 2em;
   line-height: 1.2;
   margin-bottom: 5%;
 }
+
 .desc span {
   font-size: 0.85em;
   text-transform: uppercase;
 }
+
 .desc.four {
   height: 405px;
 }
+
 .desc.four p {
   margin-bottom: 60%;
 }
@@ -102,15 +117,18 @@ header div.container {
   padding: 15% 5%;
   text-align: center;
 }
+
 .side-card p {
   font-size: 2em;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5%;
 }
+
 .side-card span {
   font-size: 0.9em;
 }
+
 .side-card .btn {
   padding: 10px;
   border-radius: 5px;
@@ -119,11 +137,13 @@ header div.container {
   box-shadow: none;
   cursor: pointer;
 }
+
 .side-card .btn.btn-danger {
   color: #fff;
   border-color: #fff;
   background-color: #ffb0b0;
 }
+
 .side-card .btn.btn-danger:hover {
   color: #fff;
   border-color: #fff;
@@ -135,17 +155,21 @@ header div.container {
   padding: 1%;
   box-sizing: border-box;
 }
+
 .news-article div img {
   width: 100%;
 }
+
 .news-article div .text-box {
   padding: 20px;
   background-color: #ff7a59;
 }
+
 .news-article div .text-box h1 {
   font-size: x-large;
   padding-bottom: 5px;
 }
+
 .news-article div .text-box h3 {
   font-size: large;
 }
@@ -155,32 +179,49 @@ header div.container {
   background-image: linear-gradient(to right, #f2555b, #ff7a59);
   color: white;
 }
+
 .subscribe-box .subscribe-info {
   align-items: center;
   padding: 64px;
 }
+
 .subscribe-box .subscribe-info div h1 {
   font-size: xx-large;
   padding: 16px 0px;
   line-height: 40px;
 }
+
 .subscribe-box .subscribe-info div p {
   font-size: larger;
   padding: 16px 0px;
 }
+
 .subscribe-box .subscribe-form {
   padding: 48px 48px 48px 0px;
 }
+
+.subscribe-box .subscribe-form label {
+  padding-bottom: 4px;
+}
+
 .subscribe-box .subscribe-form button {
   height: 36px;
 }
+
+.subscribe-box .subscribe-form .btn-white {
+  margin-top: 18px;
+}
+
 .subscribe-box .subscribe-form p {
   font-size: smaller;
   line-height: 20px;
+  padding: 10px 0px;
 }
+
 .subscribe-box .subscribe-form .hr p {
   text-align: center;
 }
+
 .subscribe-box .subscribe-form .hr hr {
   background-color: white;
   border-color: transparent;
@@ -189,6 +230,58 @@ header div.container {
 
 .bts {
   margin-bottom: 20px;
+}
+
+footer {
+  padding-top: 92px;
+  background-color: #33475b;
+  margin-top: 92px;
+  color: white;
+}
+
+footer ul li {
+  padding: 8px;
+  font-size: small;
+}
+
+footer ul li b {
+  font-weight: 800;
+  font-size: medium;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer button {
+  height: 35px;
+  margin: 10px 0px;
+}
+
+footer .center {
+  margin: 25px 0px;
+}
+
+footer .center a {
+  color: white;
+  padding: 8px;
+}
+
+footer .flex {
+  padding-top: 20px;
+}
+
+footer .right a {
+  padding: 8px;
+}
+
+footer .small-text {
+  font-size: smaller;
 }
 
 /*# sourceMappingURL=main.css.map */
