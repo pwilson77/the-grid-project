@@ -1,32 +1,19 @@
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto|Roboto+Slab');
+@import "colors";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto|Roboto+Slab");
 // width variables
 $width: 100%;
 $col-size: $width / 12;
 
-// COLOR VARIABLES
-$primary: #008cff;
-$primary-light: #b8d7ff;
-$secondary: #333;
-$secondary-light: #ddd;
-$danger: #ff0000;
-$danger-light: #ffb0b0;
-$success: #008300;
-$success-light: #77d377;
-$white: #fff;
-$input-height: 35px;
-$link-color: #cbd6e2;
-$link-hover-color: #0091ae;
-
 // Font Variables
-$body-font: 'Roboto', sans-serif;   
-$header-font: 'Open Sans', sans-serif;
-$roboto-slab: 'Roboto Slab', serif;   
+$body-font: "Roboto", sans-serif;
+$header-font: "Open Sans", sans-serif;
+$roboto-slab: "Roboto Slab", serif;
 
 // IMAGE STYLES
-.img{
+.img {
   margin: 0%;
-  &-responsive{
+  &-responsive {
     width: $width;
     height: auto;
   }
@@ -37,7 +24,12 @@ body {
   font-family: $body-font;
   font-weight: normal;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font;
   font-weight: normal;
 }
@@ -53,18 +45,18 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 // CARDS
-.card{
+.card {
   padding: 2%;
   // margin-left: 4%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   background-color: $secondary-light;
   cursor: pointer;
-  p{
+  p {
     font-size: 1em;
     padding-bottom: 2%;
   }
-  span{
+  span {
     font-size: 1em;
     text-transform: uppercase;
   }
@@ -128,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // LINK
-.link{
+.link {
   text-decoration: none;
   color: $secondary;
 }
@@ -138,11 +130,11 @@ h1, h2, h3, h4, h5, h6 {
 .flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
-  &-row{
+  align-items: center;
+  &-row {
     flex-direction: row;
   }
-  &-column{
+  &-column {
     flex-direction: column;
   }
 }
@@ -279,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Style for the top navigation bar */
 .navbar {
   display: flex;
-  background-color:$secondary;
+  background-color: $secondary;
   flex-direction: row-reverse;
   a {
     color: $white;
@@ -287,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-align: center;
     &:hover {
-      background-color:$secondary-light;
+      background-color: $secondary-light;
       color: $secondary;
     }
   }
