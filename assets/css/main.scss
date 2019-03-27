@@ -280,7 +280,7 @@ footer {
   }
 
   button {
-    height: 35px;
+    min-height: 35px;
     margin: 10px 0px;
   }
 
@@ -306,14 +306,45 @@ footer {
   .small-text {
     font-size: smaller;
   }
+
+  .footer-link-con {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 //Responsiveness
 @media only screen and (max-width: 768px) {
-  .subscribe-form {
+  .subscribe-form,
+  .hide {
     display: none;
   }
-  .subscribe-info {
+  .subscribe-info,
+  .socialCon {
+    display: flex;
     justify-content: center;
+    margin-left: 0px !important;
+
+    button {
+      height: auto;
+    }
+  }
+
+  .footer-link-con {
+    height: 70px;
+    border: 1px solid;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    .right {
+      font-size: x-small;
+    }
   }
 }

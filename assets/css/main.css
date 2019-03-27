@@ -169,7 +169,7 @@ footer {
     footer ul li a:hover {
       text-decoration: underline; }
   footer button {
-    height: 35px;
+    min-height: 35px;
     margin: 10px 0px; }
   footer .center {
     margin: 25px 0px; }
@@ -182,12 +182,32 @@ footer {
     padding: 8px; }
   footer .small-text {
     font-size: smaller; }
+  footer .footer-link-con a {
+    text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
-  .subscribe-form {
+  .subscribe-form,
+  .hide {
     display: none; }
 
-  .subscribe-info {
+  .subscribe-info,
+  .socialCon {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px !important; }
+    .subscribe-info button,
+    .socialCon button {
+      height: auto; }
+
+  .footer-link-con {
+    height: 70px;
+    border: 1px solid;
+    border-color: white;
+    display: flex;
+    align-items: center;
     justify-content: center; } }
+@media only screen and (max-width: 600px) {
+  footer .right {
+    font-size: x-small; } }
 
 /*# sourceMappingURL=main.css.map */
