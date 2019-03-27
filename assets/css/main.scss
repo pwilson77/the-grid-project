@@ -10,6 +10,20 @@
   }
 }
 
+.btn {
+  border-radius: 5px;
+  &.btn-danger {
+    color: $white;
+    border-color: $white;
+    background-color: $danger-light;
+    &:hover {
+      color: $white;
+      border-color: $white;
+      background-color: $danger;
+    }
+  }
+}  
+
 header div.container{
   border-bottom: $secondary solid 1px;
 }
