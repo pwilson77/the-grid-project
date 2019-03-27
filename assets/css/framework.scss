@@ -1,22 +1,10 @@
 @import "reset";
+@import "colors";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto|Roboto+Slab");
 // width variables
 $width: 100%;
 $col-size: $width / 12;
-
-// COLOR VARIABLES
-$primary: #008cff;
-$primary-light: #b8d7ff;
-$secondary: #333;
-$secondary-light: #ddd;
-$danger: #ff0000;
-$danger-light: #ffb0b0;
-$success: #008300;
-$success-light: #77d377;
-$white: #fff;
 $input-height: 35px;
-$link-color: #cbd6e2;
-$link-hover-color: #0091ae;
 
 // Font Variables
 $body-font: "Roboto", sans-serif;
@@ -49,7 +37,7 @@ h6 {
 
 .btn {
   font-family: $roboto-slab;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 // RESPOMNSIVE CLASS

@@ -1,3 +1,5 @@
+@import "colors";
+
 .logo {
   justify-content: center;
 
@@ -6,6 +8,128 @@
       font-size: xx-large;
     }
   }
+}
+
+header div.container{
+  border-bottom: $secondary solid 1px;
+}
+/* Style for the top navigation bar */
+.navbar {
+  // display: flex;
+  background-color: $white;
+  // flex-direction: row-reverse;
+  a {
+    color: $secondary;
+    font-weight: bold;
+    font-size: .88em;
+    // padding: 14px 20px;
+    // text-decoration: none;
+    // text-align: center;
+    &:hover {
+      background-color: $white;
+      color: $secondary-light;
+    }
+  }
+  div {
+    visibility: collapse;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    div {
+      visibility: visible;
+      background-color: $white;
+      padding: 1px 10px;
+      flex-direction: row;
+    }
+    a {
+      visibility: collapse;
+    }
+  }
+}
+
+// CARDS
+.card {
+  padding: 6% 2%;
+  // margin-left: 4%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  background-color: $secondary-light;
+  cursor: pointer;
+  font-size: .85em;
+  p {
+    padding-bottom: 2%;
+    line-height: 1.5;
+  }
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.aside-head{
+  font-size: .88em;
+  color: $white;
+  width: 50%;
+}
+
+.desc{
+  margin-top: -1%;
+  p{
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 5%;
+  }
+  span{
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+  &.four{
+    height: 405px;
+    p{
+      margin-bottom: 60%;
+    }  
+  }
+}
+
+.side-card{
+  height: 100%;
+  padding: 3%;
+  color: $white;
+  padding: 15% 5%;
+  text-align: center;
+  // margin-left: 4%;
+  // margin-top: 2.5%;
+  // margin-bottom: 2.5%;
+  // background-color: $secondary-light;
+
+  p{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5%;
+  }
+  span{
+    font-size: .9em;
+    // text-transform: uppercase;
+  }
+
+  .btn {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    cursor: pointer;
+    &.btn-danger {
+      color: $white;
+      border-color: $white;
+      background-color: $danger-light;
+      &:hover {
+        color: $white;
+        border-color: $white;
+        background-color: $danger;
+      }
+    }
+  }  
 }
 
 .news-article {

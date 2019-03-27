@@ -3,6 +3,93 @@
   .logo div h1 {
     font-size: xx-large; }
 
+header div.container {
+  border-bottom: #333 solid 1px; }
+
+/* Style for the top navigation bar */
+.navbar {
+  background-color: #fff; }
+  .navbar a {
+    color: #333;
+    font-weight: bold;
+    font-size: .88em; }
+    .navbar a:hover {
+      background-color: #fff;
+      color: #ddd; }
+  .navbar div {
+    visibility: collapse; }
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column; }
+      .navbar div {
+        visibility: visible;
+        background-color: #fff;
+        padding: 1px 10px;
+        flex-direction: row; }
+      .navbar a {
+        visibility: collapse; } }
+
+.card {
+  padding: 6% 2%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: .85em; }
+  .card p {
+    padding-bottom: 2%;
+    line-height: 1.5; }
+  .card span {
+    text-transform: uppercase; }
+
+.aside-head {
+  font-size: .88em;
+  color: #fff;
+  width: 50%; }
+
+.desc {
+  margin-top: -1%; }
+  .desc p {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 5%; }
+  .desc span {
+    font-size: .85em;
+    text-transform: uppercase; }
+  .desc.four {
+    height: 405px; }
+    .desc.four p {
+      margin-bottom: 60%; }
+
+.side-card {
+  height: 100%;
+  padding: 3%;
+  color: #fff;
+  padding: 15% 5%;
+  text-align: center; }
+  .side-card p {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5%; }
+  .side-card span {
+    font-size: .9em; }
+  .side-card .btn {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    cursor: pointer; }
+    .side-card .btn.btn-danger {
+      color: #fff;
+      border-color: #fff;
+      background-color: #ffb0b0; }
+      .side-card .btn.btn-danger:hover {
+        color: #fff;
+        border-color: #fff;
+        background-color: #ff0000; }
+
 .news-article {
   color: white;
   padding: 1%;
