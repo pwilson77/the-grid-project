@@ -261,3 +261,13 @@ footer {
     font-size: smaller;
   }
 }
+
+//Responsiveness
+@media only screen and (max-width: 768px) {
+  .subscribe-form {
+    display: none;
+  }
+  .subscribe-info {
+    justify-content: center;
+  }
+}

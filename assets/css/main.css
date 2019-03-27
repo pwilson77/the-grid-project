@@ -172,4 +172,11 @@ footer {
   footer .small-text {
     font-size: smaller; }
 
+@media only screen and (max-width: 768px) {
+  .subscribe-form {
+    display: none; }
+
+  .subscribe-info {
+    justify-content: center; } }
+
 /*# sourceMappingURL=main.css.map */
