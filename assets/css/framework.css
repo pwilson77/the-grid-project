@@ -226,6 +226,11 @@ h6 {
   text-decoration: none;
   color: #333; }
 
+.link2, .socialI {
+  color: #cbd6e2; }
+  .link2:hover, .socialI:hover {
+    color: #0091ae; }
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -644,6 +649,22 @@ h6 {
       color: #ddd;
       border-color: #333;
       background-color: #333; }
+  .btn.btn-transparent {
+    color: white;
+    border-color: #fff;
+    background-color: transparent; }
+    .btn.btn-transparent:hover {
+      color: #333;
+      border-color: transparent;
+      background-color: #fff; }
+  .btn.btn-white {
+    color: #333;
+    border-color: transparent;
+    background-color: #fff; }
+    .btn.btn-white:hover {
+      color: #fff;
+      border-color: transparent;
+      background-color: #333; }
 
 /* Forms */
 .form-d input[type="checkbox"],
@@ -663,6 +684,7 @@ h6 {
 
 /*Social Icons*/
 .socialI {
-  font-size: larger; }
+  font-size: larger;
+  padding: 8px; }
 
 /*# sourceMappingURL=framework.css.map */

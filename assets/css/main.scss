@@ -10,7 +10,7 @@
   }
 }
 
-header div.container{
+header div.container {
   border-bottom: $secondary solid 1px;
 }
 /* Style for the top navigation bar */
@@ -21,7 +21,7 @@ header div.container{
   a {
     color: $secondary;
     font-weight: bold;
-    font-size: .88em;
+    font-size: 0.88em;
     // padding: 14px 20px;
     // text-decoration: none;
     // text-align: center;
@@ -55,7 +55,7 @@ header div.container{
   margin-bottom: 2.5%;
   background-color: $secondary-light;
   cursor: pointer;
-  font-size: .85em;
+  font-size: 0.85em;
   p {
     padding-bottom: 2%;
     line-height: 1.5;
@@ -65,32 +65,32 @@ header div.container{
   }
 }
 
-.aside-head{
-  font-size: .88em;
+.aside-head {
+  font-size: 0.88em;
   color: $white;
   width: 50%;
 }
 
-.desc{
+.desc {
   margin-top: -1%;
-  p{
+  p {
     font-size: 2em;
     line-height: 1.2;
     margin-bottom: 5%;
   }
-  span{
-    font-size: .85em;
+  span {
+    font-size: 0.85em;
     text-transform: uppercase;
   }
-  &.four{
+  &.four {
     height: 405px;
-    p{
+    p {
       margin-bottom: 60%;
-    }  
+    }
   }
 }
 
-.side-card{
+.side-card {
   height: 100%;
   padding: 3%;
   color: $white;
@@ -101,14 +101,14 @@ header div.container{
   // margin-bottom: 2.5%;
   // background-color: $secondary-light;
 
-  p{
+  p {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 5%;
   }
-  span{
-    font-size: .9em;
+  span {
+    font-size: 0.9em;
     // text-transform: uppercase;
   }
 
@@ -129,7 +129,7 @@ header div.container{
         background-color: $danger;
       }
     }
-  }  
+  }
 }
 
 .news-article {
@@ -179,13 +179,19 @@ header div.container{
   .subscribe-form {
     padding: 48px 48px 48px 0px;
 
+    label {
+      padding-bottom: 4px;
+    }
     button {
       height: 36px;
     }
-
+    .btn-white {
+      margin-top: 18px;
+    }
     p {
       font-size: smaller;
       line-height: 20px;
+      padding: 10px 0px;
     }
 
     .hr {
@@ -203,4 +209,55 @@ header div.container{
 
 .bts {
   margin-bottom: 20px;
+}
+
+footer {
+  padding-top: 92px;
+  background-color: #33475b;
+  margin-top: 92px;
+  color: white;
+
+  ul {
+    li {
+      padding: 8px;
+      font-size: small;
+      b {
+        font-weight: 800;
+        font-size: medium;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  button {
+    height: 35px;
+    margin: 10px 0px;
+  }
+
+  .center {
+    margin: 25px 0px;
+
+    a {
+      color: white;
+      padding: 8px;
+    }
+  }
+
+  .flex {
+    padding-top: 20px;
+  }
+
+  .right {
+    a {
+      padding: 8px;
+    }
+  }
+  .small-text {
+    font-size: smaller;
+  }
 }

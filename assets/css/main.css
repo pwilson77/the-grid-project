@@ -12,7 +12,7 @@ header div.container {
   .navbar a {
     color: #333;
     font-weight: bold;
-    font-size: .88em; }
+    font-size: 0.88em; }
     .navbar a:hover {
       background-color: #fff;
       color: #ddd; }
@@ -35,7 +35,7 @@ header div.container {
   margin-bottom: 2.5%;
   background-color: #ddd;
   cursor: pointer;
-  font-size: .85em; }
+  font-size: 0.85em; }
   .card p {
     padding-bottom: 2%;
     line-height: 1.5; }
@@ -43,7 +43,7 @@ header div.container {
     text-transform: uppercase; }
 
 .aside-head {
-  font-size: .88em;
+  font-size: 0.88em;
   color: #fff;
   width: 50%; }
 
@@ -54,7 +54,7 @@ header div.container {
     line-height: 1.2;
     margin-bottom: 5%; }
   .desc span {
-    font-size: .85em;
+    font-size: 0.85em;
     text-transform: uppercase; }
   .desc.four {
     height: 405px; }
@@ -73,7 +73,7 @@ header div.container {
     line-height: 1.2;
     margin-bottom: 5%; }
   .side-card span {
-    font-size: .9em; }
+    font-size: 0.9em; }
   .side-card .btn {
     padding: 10px;
     border-radius: 5px;
@@ -121,11 +121,16 @@ header div.container {
       padding: 16px 0px; }
   .subscribe-box .subscribe-form {
     padding: 48px 48px 48px 0px; }
+    .subscribe-box .subscribe-form label {
+      padding-bottom: 4px; }
     .subscribe-box .subscribe-form button {
       height: 36px; }
+    .subscribe-box .subscribe-form .btn-white {
+      margin-top: 18px; }
     .subscribe-box .subscribe-form p {
       font-size: smaller;
-      line-height: 20px; }
+      line-height: 20px;
+      padding: 10px 0px; }
     .subscribe-box .subscribe-form .hr p {
       text-align: center; }
     .subscribe-box .subscribe-form .hr hr {
@@ -135,5 +140,36 @@ header div.container {
 
 .bts {
   margin-bottom: 20px; }
+
+footer {
+  padding-top: 92px;
+  background-color: #33475b;
+  margin-top: 92px;
+  color: white; }
+  footer ul li {
+    padding: 8px;
+    font-size: small; }
+    footer ul li b {
+      font-weight: 800;
+      font-size: medium; }
+    footer ul li a {
+      color: white;
+      text-decoration: none; }
+    footer ul li a:hover {
+      text-decoration: underline; }
+  footer button {
+    height: 35px;
+    margin: 10px 0px; }
+  footer .center {
+    margin: 25px 0px; }
+    footer .center a {
+      color: white;
+      padding: 8px; }
+  footer .flex {
+    padding-top: 20px; }
+  footer .right a {
+    padding: 8px; }
+  footer .small-text {
+    font-size: smaller; }
 
 /*# sourceMappingURL=main.css.map */

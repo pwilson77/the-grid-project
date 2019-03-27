@@ -126,6 +126,17 @@ h6 {
   color: $secondary;
 }
 
+%link2-css {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.link2 {
+  @extend %link2-css;
+}
+
 // FLEX AND OTHER SPECIAL CLASSES
 
 .flex {
@@ -380,6 +391,26 @@ h6 {
       background-color: $secondary;
     }
   }
+  &.btn-transparent {
+    color: white;
+    border-color: $white;
+    background-color: transparent;
+    &:hover {
+      color: $secondary;
+      border-color: transparent;
+      background-color: $white;
+    }
+  }
+  &.btn-white {
+    color: $secondary;
+    border-color: transparent;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      border-color: transparent;
+      background-color: $secondary;
+    }
+  }
 }
 
 /* Forms */
@@ -407,5 +438,7 @@ h6 {
 
 /*Social Icons*/
 .socialI {
+  @extend %link2-css;
   font-size: larger;
+  padding: 8px;
 }
