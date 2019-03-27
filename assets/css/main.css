@@ -116,6 +116,9 @@ header div.container {
     .news-article div .text-box h3 {
       font-size: large; }
 
+.subscribe-con {
+  padding: 1%; }
+
 .subscribe-box {
   height: 540px;
   background-image: linear-gradient(to right, #f2555b, #ff7a59);
