@@ -34,8 +34,10 @@ header div.container {
 .navbar {
   // display: flex;
   background-color: $white;
-
-  // flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 2%;
   a {
     color: $secondary;
     font-weight: bold;
@@ -48,25 +50,23 @@ header div.container {
       background-color: $white;
       color: $secondary-light;
     }
-  }
-
-  div {
-    visibility: collapse;
-  }
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-
-    div {
-      visibility: visible;
-      background-color: $white;
-      padding: 1px 10px;
-      flex-direction: row;
+    &:last-child{
+      padding-right: 0px;
     }
+  }
 
+  
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
     a {
       visibility: collapse;
     }
+  }
+}
+
+.main,.two,.three,.four{
+  [class*="col-"]{
+    padding: 1%;
   }
 }
 
@@ -111,10 +111,23 @@ header div.container {
   }
 
   &.four {
-    height: 405px;
+    height: 58.5%;
 
     p {
-      margin-bottom: 60%;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 600px) {
+      height: 150px;
+      p {
+        margin-bottom: 5px;
+      }
+  
+    }
+    @media only screen and (max-width: 768px) {
+      height: 150px;
+      p {
+        margin-bottom: 30px;
+      }  
     }
   }
 }

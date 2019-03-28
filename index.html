@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <div class="container secondary-light-bg">
+    <div class="container secondary-light-bg hide-sm hide-md">
       <div class="head flex flex-row mb-5">
         <div class="left pt-5 pb-5"><a class="link" href="#">English</a> <span>|</span> <a class="link" href="#">Contact
             Us</a></div>
@@ -23,26 +23,38 @@
         </div>
       </div>
     </div>
+    <!-- <div class="container secondary-light-bg">
+      <div class="head flex flex-row mb-5 hide-sm hide-md">
+        <div class="left pt-5 pb-5"><a class="link" href="#">English</a> <span>|</span> <a class="link" href="#">Contact
+            Us</a></div>
+        <div class="right pt-5 pb-5"><button class="btn btn-danger">Log in</button>
+          <botton class="btn btn-danger ml-5">Get HubSoft free</botton>
+        </div>
+      </div>
+    </div> -->
+
     <!-- Navigation Bar -->
     <div class="navbar">
-      <!-- <div>
-          <div class="logo">
-            Navbar
-          </div>
-          <button class="btn">button</button>
-        </div> -->
-      <a href="#">Software</a>
-      <a href="#">Pricing</a>
-      <a href="#">Resources</a>
-      <a href="#">Partners</a>
-      <a href="#">About</a>
+      <div class="left">
+        <img src="https://blog.hubspot.com/hubfs/HubSpot_Logos/HSLogo_color.svg" alt="the-logo">
+      </div>
+      <div class="bars hide-xl">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+<div class="hide-sm hide-md">
+  <a href="#">Software</a>
+  <a href="#">Pricing</a>
+  <a href="#">Resources</a>
+  <a href="#">Partners</a>
+  <a href="#">About</a>
+</div>
     </div>
 
   </header>
   <section class="main">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8 pr-5">
+        <div class="col-sm-12 col-md-12 col-xl-8">
           <img src="https://blog.hubspot.com/hubfs/how-to-use-google-calendar.jpg" alt="main-image"
             class="img img-responsive">
           <div class="desc p-5 secondary-light-bg">
@@ -52,7 +64,7 @@
             <span>Marketing | 16 min read</span>
           </div>
         </div>
-        <div class="col-xl-4 pl-5">
+        <div class="col-sm-12 col-md-12 col-xl-4 hide-sm">
           <h4 class="aside-head mb-5 p-2 danger-light-bg">Most Popular</h4>
           <div class="card">
             <p>
@@ -105,7 +117,7 @@
   <section class="two">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4 pr-3">
+        <div class="col-sm-12 col-md-12 col-xl-4">
           <img src="https://blog.hubspot.com/hubfs/twitter-stats.jpg" alt="image-responsive" class="img img-responsive">
           <div class="desc p-5 secondary-light-bg">
             <p>23 Remarkable Twitter Statistics to Be Aware of in 2019</p>
@@ -114,7 +126,7 @@
             </span>
           </div>
         </div>
-        <div class="col-xl-4 pl-3">
+        <div class="col-sm-12 col-md-12 col-xl-4">
           <img src="https://blog.hubspot.com/hubfs/work-life-balance.jpg" alt="image-responsive"
             class="img img-responsive">
           <div class="desc p-5 secondary-light-bg">
@@ -124,7 +136,7 @@
             </span>
           </div>
         </div>
-        <div class="col-xl-4 pl-5">
+        <div class="col-sm-12 col-md-12 col-xl-4">
           <div class="side-card danger-light-bg">
             <p>Subscribe to Our Blog</p>
             <span>Stay up to date with the latest marketing, sales, and service tips and news.</span>
@@ -140,13 +152,13 @@
   <section class="three">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4">
+        <div class="col-sm-12 col-md-12 col-xl-4">
           <div class="side-card danger-light-bg">
             <p>How to Be Really Good at Marketing in 2020</p>
             <button class="btn btn-danger r mt-5 mb-5">Start the Crash Course</button>
           </div>
         </div>
-        <div class="col-xl-8 pl-5">
+        <div class="col-sm-12 col-md-12 col-xl-8">
           <img src="https://blog.hubspot.com/hubfs/direct-costs-1.jpg" alt="main-image" class="img img-responsive">
           <div class="desc p-5 secondary-light-bg">
             <p>
@@ -162,7 +174,7 @@
   <section class="four">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8 pr-5">
+        <div class="col-sm-12 col-md-12 col-xl-8">
           <img src="https://blog.hubspot.com/hubfs/how-to-be-a-good-salesman.jpg" alt="main-image"
             class="img img-responsive">
           <div class="desc p-5 secondary-light-bg">
@@ -171,7 +183,7 @@
             <span>Marketing | 16 min read</span>
           </div>
         </div>
-        <div class="col-xl-4 pl-3">
+        <div class="col-sm-12 col-md-12 col-xl-4">
           <img src="https://blog.hubspot.com/hubfs/gmail-keyboard-shortcuts.jpg" alt="image-responsive"
             class="img img-responsive">
           <div class="desc four p-5 secondary-light-bg">
@@ -183,11 +195,6 @@
           </div>
         </div>
       </div>
-  </section>
-  <section class="five">
-    <div class="container">
-      <div class="row"></div>
-    </div>
   </section>
   <section class="six">
     <div class="container">
@@ -389,13 +396,12 @@
             <div class="left">
                 <img src="https://blog.hubspot.com/hubfs/HubSpot_Logos/HSLogo_gray.svg" alt="the-logo">
                 <p class="small-text">Copyright © 2019 HubSpot,</p>
-              </div>
+            </div>
               
           <div class="right">
             <a href="#" class="link2">Legal Stuff</a>
             <a href="#" class="link2">Privacy Policy</a>
-          </div>
-         
+          </div>         
         </div>
       </div>
     </div>
