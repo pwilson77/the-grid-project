@@ -1,6 +1,7 @@
 .logo {
   justify-content: center;
 }
+
 .logo div h1 {
   font-size: xx-large;
 }
@@ -8,11 +9,13 @@
 .btn {
   border-radius: 5px;
 }
+
 .btn.btn-danger {
   color: #fff;
   border-color: #fff;
   background-color: #ffb0b0;
 }
+
 .btn.btn-danger:hover {
   color: #fff;
   border-color: #fff;
@@ -31,28 +34,36 @@ header div.container {
   align-items: center;
   padding: 15px 2%;
 }
+
 .navbar a {
   color: #333;
   font-weight: bold;
   font-size: 0.88em;
 }
+
 .navbar a:hover {
   background-color: #fff;
   color: #ddd;
 }
+
 .navbar a:last-child {
   padding-right: 0px;
 }
+
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: row;
   }
+
   .navbar a {
     visibility: collapse;
   }
 }
 
-.main [class*=col-], .two [class*=col-], .three [class*=col-], .four [class*=col-] {
+.main [class*=col-],
+.two [class*=col-],
+.three [class*=col-],
+.four [class*=col-] {
   padding: 1%;
 }
 
@@ -64,10 +75,12 @@ header div.container {
   cursor: pointer;
   font-size: 0.85em;
 }
+
 .card p {
   padding-bottom: 2%;
   line-height: 1.5;
 }
+
 .card span {
   text-transform: uppercase;
 }
@@ -81,33 +94,41 @@ header div.container {
 .desc {
   margin-top: -1%;
 }
+
 .desc p {
   font-size: 2em;
   line-height: 1.2;
   margin-bottom: 5%;
 }
+
 .desc span {
   font-size: 0.85em;
   text-transform: uppercase;
 }
+
 .desc.four {
   height: 58.5%;
 }
+
 .desc.four p {
   margin-bottom: 40px;
 }
+
 @media screen and (max-width: 600px) {
   .desc.four {
     height: 150px;
   }
+
   .desc.four p {
     margin-bottom: 5px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .desc.four {
     height: 150px;
   }
+
   .desc.four p {
     margin-bottom: 30px;
   }
@@ -120,15 +141,18 @@ header div.container {
   padding: 15% 5%;
   text-align: center;
 }
+
 .side-card p {
   font-size: 2em;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5%;
 }
+
 .side-card span {
   font-size: 0.9em;
 }
+
 .side-card .btn {
   padding: 10px;
   border-radius: 5px;
@@ -137,11 +161,13 @@ header div.container {
   box-shadow: none;
   cursor: pointer;
 }
+
 .side-card .btn.btn-danger {
   color: #fff;
   border-color: #fff;
   background-color: #ffb0b0;
 }
+
 .side-card .btn.btn-danger:hover {
   color: #fff;
   border-color: #fff;
@@ -153,19 +179,27 @@ header div.container {
   padding: 1%;
   box-sizing: border-box;
 }
+
 .news-article div img {
   width: 100%;
 }
+
 .news-article div .text-box {
   padding: 20px;
   background-color: #ff7a59;
 }
+
 .news-article div .text-box h1 {
   font-size: x-large;
   padding-bottom: 5px;
 }
+
 .news-article div .text-box h3 {
   font-size: large;
+}
+
+.subscribe-con {
+  padding: 1%;
 }
 
 .subscribe-box {
@@ -173,39 +207,49 @@ header div.container {
   background-image: linear-gradient(to right, #f2555b, #ff7a59);
   color: white;
 }
+
 .subscribe-box .subscribe-info {
   align-items: center;
   padding: 64px;
 }
+
 .subscribe-box .subscribe-info div h1 {
   font-size: xx-large;
   padding: 16px 0px;
   line-height: 40px;
 }
+
 .subscribe-box .subscribe-info div p {
   font-size: larger;
   padding: 16px 0px;
 }
+
 .subscribe-box .subscribe-form {
   padding: 48px 48px 48px 0px;
 }
+
 .subscribe-box .subscribe-form label {
   padding-bottom: 4px;
 }
+
 .subscribe-box .subscribe-form button {
   height: 36px;
 }
+
 .subscribe-box .subscribe-form .btn-white {
   margin-top: 18px;
 }
+
 .subscribe-box .subscribe-form p {
   font-size: smaller;
   line-height: 20px;
   padding: 10px 0px;
 }
+
 .subscribe-box .subscribe-form .hr p {
   text-align: center;
 }
+
 .subscribe-box .subscribe-form .hr hr {
   background-color: white;
   border-color: transparent;
@@ -222,59 +266,72 @@ footer {
   margin-top: 92px;
   color: white;
 }
+
 footer ul li {
   padding: 8px;
   font-size: small;
 }
+
 footer ul li b {
   font-weight: 800;
   font-size: medium;
 }
+
 footer ul li a {
   color: white;
   text-decoration: none;
 }
+
 footer ul li a:hover {
   text-decoration: underline;
 }
+
 footer button {
   min-height: 35px;
   margin: 10px 0px;
 }
+
 footer .center {
   margin: 25px 0px;
 }
+
 footer .center a {
   color: white;
   padding: 8px;
 }
+
 footer .flex {
   padding-top: 20px;
 }
+
 footer .right a {
   padding: 8px;
 }
+
 footer .small-text {
   font-size: smaller;
 }
+
 footer .footer-link-con a {
   text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
+
   .subscribe-form,
-.hide {
+  .hide {
     display: none;
   }
 
   .subscribe-info,
-.socialCon {
+  .socialCon {
     display: flex;
     justify-content: center;
     margin-left: 0px !important;
   }
+
   .subscribe-info button,
-.socialCon button {
+  .socialCon button {
     height: auto;
   }
 
@@ -287,6 +344,7 @@ footer .footer-link-con a {
     justify-content: center;
   }
 }
+
 @media only screen and (max-width: 600px) {
   footer .right {
     font-size: x-small;

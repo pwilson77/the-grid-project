@@ -32,7 +32,6 @@ header div.container {
 
 /* Style for the top navigation bar */
 .navbar {
-  // display: flex;
   background-color: $white;
   justify-content: space-between;
   flex-direction: row;
@@ -42,10 +41,6 @@ header div.container {
     color: $secondary;
     font-weight: bold;
     font-size: 0.88em;
-
-    // padding: 14px 20px;
-    // text-decoration: none;
-    // text-align: center;
     &:hover {
       background-color: $white;
       color: $secondary-light;
@@ -73,7 +68,6 @@ header div.container {
 // CARDS
 .card {
   padding: 6% 2%;
-  // margin-left: 4%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   background-color: $secondary-light;
@@ -138,10 +132,6 @@ header div.container {
   color: $white;
   padding: 15% 5%;
   text-align: center;
-  // margin-left: 4%;
-  // margin-top: 2.5%;
-  // margin-bottom: 2.5%;
-  // background-color: $secondary-light;
 
   p {
     font-size: 2em;
@@ -152,7 +142,6 @@ header div.container {
 
   span {
     font-size: 0.9em;
-    // text-transform: uppercase;
   }
 
   .btn {
@@ -201,6 +190,9 @@ header div.container {
       }
     }
   }
+}
+.subscribe-con {
+  padding: 1%;
 }
 
 .subscribe-box {
