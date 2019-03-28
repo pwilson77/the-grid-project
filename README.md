@@ -1,6 +1,6 @@
-# the-grid-project
+# THE GRID FRAMEWORK PROJECT
 
-This is a clone of [TNW](https://thenextweb.com/)
+This is a clone of [HUBSPOT](https://blog.hubspot.com/)
 
 ## Authors
 - **Tever Aosu** [truetechcode](https://github.com/truetechcode)
@@ -8,4 +8,4 @@ This is a clone of [TNW](https://thenextweb.com/)
 
 ## Demo
 You can check our live demo of the site below.
-- [TheNextWeb-Clone](https://pwilson77.github.io/BUILDING-WITH-RESPONSIVE-DESIGN/)
+- [Hubspot on our grid](https://pwilson77.github.io/BUILDING-WITH-RESPONSIVE-DESIGN/)
