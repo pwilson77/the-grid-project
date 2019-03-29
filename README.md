@@ -8,4 +8,4 @@ This is a clone of [HUBSPOT](https://blog.hubspot.com/)
 
 ## Demo
 You can check our live demo of the site below.
-- [Hubspot on our grid](https://pwilson77.github.io/BUILDING-WITH-RESPONSIVE-DESIGN/)
+- [Hubspot on our grid](https://pwilson77.github.io/the-grid-project/)

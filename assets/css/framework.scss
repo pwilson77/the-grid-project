@@ -7,12 +7,9 @@ $col-size: $width / 12;
 $input-height: 35px;
 
 // Font Variables
-$body-font: "Roboto",
-sans-serif;
-$header-font: "Open Sans",
-sans-serif;
-$roboto-slab: "Roboto Slab",
-serif;
+$body-font: "Roboto", sans-serif;
+$header-font: "Open Sans", sans-serif;
+$roboto-slab: "Roboto Slab", serif;
 
 // IMAGE STYLES
 .img {
@@ -122,7 +119,7 @@ h6 {
 }
 
 .secondary-light-bg {
-  background-color: $secondary-light;
+  background-color: $card_bg;
 }
 
 .danger-bg {
@@ -143,6 +140,14 @@ h6 {
 
 .white-bg {
   background-color: $white;
+}
+
+.card2-bg {
+  background-image: $linear;
+}
+
+.card3-bg {
+  background-color: $pink;
 }
 
 // LINK
@@ -179,6 +184,10 @@ h6 {
   }
 }
 
+.align-center {
+  align-items: center;
+}
+
 .left {
   justify-content: flex-start;
 }
@@ -200,28 +209,26 @@ h6 {
   flex-wrap: wrap;
 }
 
-.hide{
-@media only screen and (min-width: 768px) {
-  &-xl{
-    display: none;
+.hide {
+  @media only screen and (min-width: 769px) {
+    &-xl {
+      display: none;
+    }
+  }
+  // for small sized screens
+  @media only screen and (max-width: 768px) {
+    &-md {
+      display: none;
+    }
+  }
+
+  // for small sized screens
+  @media only screen and (max-width: 600px) {
+    &-sm {
+      display: none !important;
+    }
   }
 }
-  // for small sized screens
-@media only screen and (max-width: 768px) {
-  &-md{
-    display: none;
-  }  
-}
-
-// for small sized screens
-@media only screen and (max-width: 600px) {
-  &-sm{
-    display: none;
-  }  
-}
-
-}
-
 
 // Padding Classes
 @for $i from 1 through 5 {
@@ -312,50 +319,50 @@ h6 {
 
   .row {
     box-sizing: border-box;
-    padding: 1% 0%;
+    padding: 1% 1%;
     display: flex;
     flex-wrap: wrap;
+  }
+}
 
-    // for larger screens above 768px
-    @for $i from 1 through 12 {
-      .col-xl-#{$i} {
-        width: $col-size * $i;
-        // padding: 1%;
-      }
+//the grid
 
-      .offset-xl-#{$i} {
-        margin-left: $col-size * $i;
-      }
+// for larger screens above 768px
+@for $i from 1 through 12 {
+  .col-xl-#{$i} {
+    width: $col-size * $i;
+    // padding: 1%;
+  }
+
+  .offset-xl-#{$i} {
+    margin-left: $col-size * $i;
+  }
+}
+
+// for medium sized screens
+@media only screen and (max-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $col-size * $i;
+      // padding: 1%;
     }
 
-    // for medium sized screens
-    @media only screen and (max-width: 768px) {
-      @for $i from 1 through 12 {
-        .col-md-#{$i} {
-          width: $col-size * $i;
-          // padding: 1%;
-        }
+    .offset-md-#{$i} {
+      margin-left: $col-size * $i;
+    }
+  }
+}
 
-        .offset-md-#{$i} {
-          margin-left: $col-size * $i;
-        }
-      }
+// for small sized screens
+@media only screen and (max-width: 600px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: $col-size * $i;
+      // padding: 1%;
     }
 
-    // for small sized screens
-    @media only screen and (max-width: 600px) {
-      flex-direction: column;
-
-      @for $i from 1 through 12 {
-        .col-sm-#{$i} {
-          width: $col-size * $i;
-          // padding: 1%;
-        }
-
-        .offset-sm-#{$i} {
-          margin-left: $col-size * $i;
-        }
-      }
+    .offset-sm-#{$i} {
+      margin-left: $col-size * $i;
     }
   }
 }
@@ -425,14 +432,14 @@ h6 {
   }
 
   &.btn-danger {
-    color: $danger;
-    border-color: $danger;
-    background-color: $danger-light;
+    color: $white;
+    border-color: $card2_bg;
+    background-color: $card2_bg;
 
     &:hover {
-      color: $danger-light;
-      border-color: $danger;
-      background-color: $danger;
+      color: $white;
+      border-color: #ff7a59de;
+      background-color: #ff7a59de;
     }
   }
 
@@ -475,15 +482,14 @@ h6 {
 
 /* Forms */
 .form-d {
-
   input[type="checkbox"],
-  input[type="radio"]{
+  input[type="radio"] {
     height: 17px;
     width: 17px;
     background-color: white;
   }
 
-  input[type="text"]{
+  input[type="text"] {
     height: $input-height;
     padding: 1%;
     border-radius: 3px;
