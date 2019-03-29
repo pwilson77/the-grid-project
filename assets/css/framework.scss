@@ -1,0 +1,513 @@
+@import "reset";
+@import "colors";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto|Roboto+Slab");
+// width variables
+$width: 100%;
+$col-size: $width / 12;
+$input-height: 35px;
+
+// Font Variables
+$body-font: "Roboto", sans-serif;
+$header-font: "Open Sans", sans-serif;
+$roboto-slab: "Roboto Slab", serif;
+
+// IMAGE STYLES
+.img {
+  margin: 0%;
+
+  &-responsive {
+    width: $width;
+    height: auto;
+  }
+}
+
+// FONTS Styles
+body {
+  font-family: $body-font;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  font-weight: normal;
+}
+
+.btn {
+  font-family: $roboto-slab;
+  font-weight: 100;
+}
+
+// RESPOMNSIVE CLASS
+.r {
+  width: $width;
+  height: auto;
+}
+
+// CARDS
+.card {
+  padding: 2%;
+  // margin-left: 4%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  background-color: $secondary-light;
+  cursor: pointer;
+
+  p {
+    font-size: 1em;
+    padding-bottom: 2%;
+  }
+
+  span {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+}
+
+// Colors
+.primary {
+  color: $primary;
+}
+
+.primary-light {
+  color: $primary-light;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.secondary-light {
+  color: $secondary-light;
+}
+
+.danger {
+  color: $danger;
+}
+
+.danger-light {
+  color: $danger-light;
+}
+
+.success {
+  color: $success;
+}
+
+.success-light {
+  color: $success-light;
+}
+
+.white {
+  color: $white;
+}
+
+// Background color
+.primary-bg {
+  background-color: $primary;
+}
+
+.primary-light-bg {
+  background-color: $primary-light;
+}
+
+.secondary-bg {
+  background-color: $secondary;
+}
+
+.secondary-light-bg {
+  background-color: $card_bg;
+}
+
+.danger-bg {
+  background-color: $danger;
+}
+
+.danger-light-bg {
+  background-color: $danger-light;
+}
+
+.success-bg {
+  background-color: $success;
+}
+
+.success-light-bg {
+  background-color: $success-light;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.card2-bg {
+  background-image: $linear;
+}
+
+.card3-bg {
+  background-color: $pink;
+}
+
+// LINK
+.link {
+  text-decoration: none;
+  color: $secondary;
+}
+
+%link2-css {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.link2 {
+  @extend %link2-css;
+}
+
+// FLEX AND OTHER SPECIAL CLASSES
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-row {
+    flex-direction: row;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hide {
+  @media only screen and (min-width: 769px) {
+    &-xl {
+      display: none;
+    }
+  }
+  // for small sized screens
+  @media only screen and (max-width: 768px) {
+    &-md {
+      display: none;
+    }
+  }
+
+  // for small sized screens
+  @media only screen and (max-width: 600px) {
+    &-sm {
+      display: none !important;
+    }
+  }
+}
+
+// Padding Classes
+@for $i from 1 through 5 {
+  .p-#{$i} {
+    padding: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .pt-#{$i} {
+    padding-top: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .pb-#{$i} {
+    padding-bottom: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .pl-#{$i} {
+    padding-left: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .pr-#{$i} {
+    padding-right: #{$i * 2}px;
+  }
+}
+
+// Margin Classes
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .mb-#{$i} {
+    margin-bottom: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .ml-#{$i} {
+    margin-left: #{$i * 2}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    margin-right: #{$i * 2}px;
+  }
+}
+
+// Border Classes
+.b {
+  border-width: 1px;
+  border-style: solid;
+
+  .b-primary {
+    border-color: $primary;
+  }
+
+  .b-secondary {
+    border-color: $secondary;
+  }
+
+  .b-success {
+    border-color: $success;
+  }
+}
+
+/* container*/
+.container {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: $width;
+  box-sizing: border-box;
+
+  .row {
+    box-sizing: border-box;
+    padding: 1% 1%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+//the grid
+
+// for larger screens above 768px
+@for $i from 1 through 12 {
+  .col-xl-#{$i} {
+    width: $col-size * $i;
+    // padding: 1%;
+  }
+
+  .offset-xl-#{$i} {
+    margin-left: $col-size * $i;
+  }
+}
+
+// for medium sized screens
+@media only screen and (max-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $col-size * $i;
+      // padding: 1%;
+    }
+
+    .offset-md-#{$i} {
+      margin-left: $col-size * $i;
+    }
+  }
+}
+
+// for small sized screens
+@media only screen and (max-width: 600px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: $col-size * $i;
+      // padding: 1%;
+    }
+
+    .offset-sm-#{$i} {
+      margin-left: $col-size * $i;
+    }
+  }
+}
+
+/* Style for the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: $secondary;
+  flex-direction: row-reverse;
+
+  a {
+    color: $white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      background-color: $secondary-light;
+      color: $secondary;
+    }
+  }
+}
+
+// Style for the Button elements
+.btn {
+  padding: 5px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  cursor: pointer;
+
+  &.btn-primary {
+    color: $primary;
+    border-color: $primary;
+    background-color: $primary-light;
+
+    &:hover {
+      color: $primary-light;
+      border-color: $primary;
+      background-color: $primary;
+    }
+  }
+
+  &.btn-secondary {
+    color: $secondary;
+    border-color: $secondary;
+    background-color: $secondary-light;
+
+    &:hover {
+      color: $secondary-light;
+      border-color: $secondary;
+      background-color: $secondary;
+    }
+  }
+
+  &.btn-success {
+    color: $success;
+    border-color: $success;
+    background-color: $success-light;
+
+    &:hover {
+      color: $success-light;
+      border-color: $success;
+      background-color: $success;
+    }
+  }
+
+  &.btn-danger {
+    color: $white;
+    border-color: $card2_bg;
+    background-color: $card2_bg;
+
+    &:hover {
+      color: $white;
+      border-color: #ff7a59de;
+      background-color: #ff7a59de;
+    }
+  }
+
+  &.btn-light {
+    color: $secondary-light;
+    border-color: $secondary-light;
+    background-color: $secondary;
+
+    &:hover {
+      color: $secondary-light;
+      border-color: $secondary;
+      background-color: $secondary;
+    }
+  }
+
+  &.btn-transparent {
+    color: white;
+    border-color: $white;
+    background-color: transparent;
+
+    &:hover {
+      color: $secondary;
+      border-color: transparent;
+      background-color: $white;
+    }
+  }
+
+  &.btn-white {
+    color: $secondary;
+    border-color: transparent;
+    background-color: $white;
+
+    &:hover {
+      color: $white;
+      border-color: transparent;
+      background-color: $secondary;
+    }
+  }
+}
+
+/* Forms */
+.form-d {
+  input[type="checkbox"],
+  input[type="radio"] {
+    height: 17px;
+    width: 17px;
+    background-color: white;
+  }
+
+  input[type="text"] {
+    height: $input-height;
+    padding: 1%;
+    border-radius: 3px;
+    border-color: transparent;
+  }
+
+  input[type="text"]:hover {
+    border-color: #008cff;
+  }
+
+  .input-group {
+    display: inline-block;
+  }
+}
+
+/*Social Icons*/
+.socialI {
+  @extend %link2-css;
+  font-size: x-large;
+  padding: 8px;
+}
